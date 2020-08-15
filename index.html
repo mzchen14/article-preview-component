@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="script" href=".../script.js" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <title>Frontend Mentor | Article preview component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="component">
+      <div id="side-image">
+        <img src="images/drawers.jpg" alt="drawers" />
+      </div>
+      <div id="item-one">
+        <h1>
+          Shift the overall look and feel by adding these wonderful touches to
+          furniture in your home
+        </h1>
+      </div>
+      <div id="paragraph">
+        Ever been in a room and felt like something was missing? Perhaps it felt
+        slightly bare and uninviting. I’ve got some simple tips to help you make
+        any room feel complete.
+      </div>
+      <div id="image">
+        <img src="images/avatar-michelle.jpg" alt="photo" />
+      </div>
+      <div id="name">Michelle Appleton</div>
+      <div id="date">
+        28 Jun 2020
+      </div>
+      <div id="button">
+        <button onclick="myFunction()"><i class="fa fa-share"></i></button>
+      </div>
+      <div id="links" class="hidden show">
+        <div>SHARE</div>
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-pinterest"></i>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  // let button = document.getElementsByTagName("button");
+  // button.addEventListener("click", function () {
+  //   document.getElementById("links").classList.toggle("show");
+  // });
+  function myFunction() {
+    console.log(document.getElementById("links"), "line 81");
+    document.getElementById("links").classList.toggle("hidden");
+  }
+</script>
